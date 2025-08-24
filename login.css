@@ -1,0 +1,131 @@
+/* Reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+body, html {
+  height: 100%;
+}
+
+.page-background {
+  height: 100vh;
+  background-color: #AFBDF2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;  /* align items starting from top */
+  gap: 15px;
+  padding-top: 30px; /* optional: some spacing from the top */
+}
+
+/* Header container: Title and logos horizontally aligned */
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  color: white;
+  font-family: 'Nunito', sans-serif;
+  font-weight: 700;
+  font-size: 30px;
+}
+
+/* Title */
+.title {
+  margin: 0;
+  letter-spacing: 2px;
+  margin-top: 0; /* was -65px, reset to 0 */
+}
+
+.logo {
+  position: relative;
+  width: 80px;
+  height: auto;
+  max-height: 130px;
+  top: 0; /* reset from -45px */
+}
+
+/* Login box styling */
+.login-box {
+  background: white;
+  border-radius: 15px;
+  width: 90%;
+  max-width: 400px;
+  min-height: 50vh;  /* at least 50% of viewport height */
+  height: auto;
+  padding: 25px 20px 30px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+  text-align: center;
+  margin-top: 0;
+}
+
+/* Login header */
+.login-header {
+  color: black;
+  font-weight: 700;
+  font-size: 20px;
+  margin-bottom: 35px;
+}
+
+/* Login form */
+.login-form input[type="text"],
+.login-form input[type="password"] {
+  width: 100%;
+  padding: 10px 12px;
+  margin-bottom: 20px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+}
+
+.login-btn {
+  width: 100%;
+  background-color: #7e89bc;
+  color: white;
+  border: none;
+  padding: 12px 0;
+  font-weight: bold;
+  font-size: 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-top: 20px; /* add margin on top */
+}
+
+.login-btn:hover {
+  background-color: #4a5599;
+}
+
+.forgot-password {
+  display: inline-block;
+  margin-top: 20px; /* increase margin on top from 15px to 20px */
+  font-size: 13px;
+  text-decoration: none;
+  color: #333;
+  transition: color 0.3s;
+}
+
+
+.forgot-password:hover {
+  color: #7e89bc;
+}
+
+/* Responsive tweaks for small screens */
+@media (max-width: 400px) {
+  .login-box {
+    padding: 15px 10px 20px;
+  }
+  
+  .login-header {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+
+  .login-btn {
+    font-size: 14px;
+    padding: 10px 0;
+  }
+}

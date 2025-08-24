@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>GeoMarket Login</title>
+  <link rel="stylesheet" href="login.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@700&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <div class="page-background">
+    
+    <!-- Replace your existing logo-container here with: -->
+    <div class="header-container">
+      <h1 class="title">GEOMARKET</h1>
+      <div class="logo-wrapper">
+        <img src="Image/logo.png" alt="Logo" class="logo">
+      </div>
+    </div>
+
+    <div class="login-box">
+      <h2 class="login-header">Log in</h2>
+      <form id="loginForm" class="login-form">
+        <input type="email" id="username" name="emailOrStoreName" placeholder="Email" required />
+        <input type="password" id="password" placeholder="Password" required />
+        <button type="submit" class="login-btn">Log in</button>
+      </form>
+      
+      <a href="#" class="forgot-password">Forgot password?</a>
+    </div>
+  </div>
+
+  <!-- Include JavaScript as a module -->
+  <script type="module" src="login.js"></script>
+
+</body>
+</html>
